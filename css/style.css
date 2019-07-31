@@ -1,0 +1,791 @@
+@font-face {
+    font-family: "HelveticaNeueCyrLight";
+    src: url("../fonts/HelveticaNeueCyr-Light.otf");
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrMed";
+    src: url("../fonts/HelveticaNeueCyr-Medium.otf");
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrBold";
+    src: url("../fonts/HelveticaNeueCyr-Bold.otf");
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrThin";
+    src: url("../fonts/HelveticaNeueCyr-Thin.otf");
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrRoman";
+    src: url("../fonts/HelveticaNeueCyr-Roman.otf");
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+
+input,
+textarea,
+a {
+    outline: none;
+    -webkit-appearance: none;
+}
+
+header,
+main,
+footer {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: HelveticaNeueCyrBold;
+    color: #fff;
+}
+
+h2 {
+    font-size: 55px;
+    font-family: HelveticaNeueCyrMed;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: HelveticaNeueCyrBold;
+    color: #fff;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: HelveticaNeueCyrBold;
+    color: #333;
+    text-align: center;
+}
+
+h1 span {
+    display: block;
+    margin-top: 15px;
+    font-size: 45px;
+    font-family: HelveticaNeueCyrMed;
+    font-weight: 100;
+}
+
+h2 span {
+    display: block;
+    font-size: 35px;
+    font-family: HelveticaNeueCyrLight;
+}
+
+.container {
+    width: 100%;
+    max-width: 1174px;
+    min-width: 320px;
+    padding: 0 14px;
+    margin: 0 auto;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+.grid-line{
+    display: -ms-grid;
+    display: grid;
+}
+.green-btn,
+.red-btn{
+    width: 100%;
+    max-width: 315px;
+    padding: 12px 30px 12px;
+    text-align: center;
+    font-size: 27px;
+    font-family: HelveticaNeueCyrBold;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    z-index: 9999;
+}
+.green-btn span,
+.red-btn span{
+    display: block;
+    font-size: 16px;
+    font-family: HelveticaNeueCyrRoman;
+}
+.green-btn{
+    background: linear-gradient(to bottom, #4da928 28%, #2a9201 100%);
+    margin-right: 15px;
+}
+.red-btn{
+    background: linear-gradient(to bottom, #e20a17 28%, #bb000b 95%);
+}
+.banner{
+    background: #fff url(images/main-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+.banner:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    background: url(images/stripes.png) no-repeat;
+    background-position: 272px 360px;
+    z-index: 9;
+}
+.main-banner{
+    position: relative;
+    z-index: 9999;
+    padding-bottom: 65px;
+    background-position: right 15px;
+    padding-top:50px;
+}
+.description{
+    position: relative;
+    z-index:9999;
+}
+.description:after{
+    content: "";
+    position: absolute;
+    bottom: -152px;
+    right: -104px;
+    width: 907px;
+    height: 550px;
+    background: url(images/platforms-res.png);
+    z-index: 99;
+}
+.banner-text{
+    margin-bottom: 70px;
+}
+.main-banner .logo{
+    margin-bottom: 132px;
+}
+.main-banner h2{
+    margin: 5px 0 0px;
+}
+.main-banner h2,
+.main-banner h3{
+    color: #333;
+}
+.sub-banner{
+    background: #333;
+    padding: 22px 0 25px;
+}
+.sub-banner *{
+    position: relative;
+    z-index: 9999;
+}
+.sub-banner h3{
+    color: #bbc1c4;
+}
+.advantages{
+    padding: 60px 0 50px;
+}
+.advantages .grid-line{
+    grid-template-columns: 250px 300px 215px 180px;
+    text-align: center;
+    justify-content: center;
+    grid-column-gap: 70px;
+}
+.advantages .grid-line div{
+    display: grid;
+    grid-template-rows: 104px 37px 40px;
+    justify-content: center;
+}
+.advantages .grid-line h4{
+    font-family: HelveticaNeueCyrRoman;
+    font-size: 25px;
+    color: #e30a17;
+    margin-bottom: 10px;
+}
+.advantages .grid-line p{
+    font-family: HelveticaNeueCyrRoman;
+    font-size: 16px;
+    color: #333;
+    min-height: 40px;
+}
+.advantages .grid-line img{
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 20px;
+}
+.opport{
+    background: #fff url(images/opport-bg.png) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 55px 0 60px;
+}
+.opport h3{
+    color: #333;
+    margin-bottom: 40px;
+}
+.opport-list{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    max-width: 868px;
+    padding: 40px 0 30px 38px;
+    margin-bottom: 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 23px #7b7b7b;
+}
+.opport-list ul{
+    display: inline-block;
+    margin: 0;
+    margin-right: 25px;
+}
+.opport-list ul li{
+    font-family: HelveticaNeueCyrRoman;
+    font-size: 18px;
+    position: relative;
+    list-style: none;
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+.opport-list ul li:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 30px;
+    height: 25px;
+    background: url(images/check.png) no-repeat;
+}
+.substrate{
+    position: relative;
+}
+.substrate:after{
+    content: "";
+    position: absolute;
+    top: -65px;
+    right: 0;
+    width: 551px;
+    height: 419px;
+    z-index: 9;
+    background:url(images/display.png);
+}
+.trade-mt4{
+    background: #333;
+    padding: 0 0 45px;
+}
+.mt4-title{
+    padding-bottom: 25px;
+    padding-top: 55px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+.mt4-title h3{
+    color: #bbc1c4;
+}
+.mt4-title:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    background: url(images/trade-stipres.png) no-repeat;
+}
+.mt4-text p{
+    display: inline-block;
+    font-size: 18px;
+    font-family: HelveticaNeueCyrRoman;
+    padding-left: 65px;
+    position: relative;
+    color: #fff;
+    vertical-align: middle;
+}
+.mt4-text div>p:first-of-type{
+    width: 100%;
+    max-width: 430px;
+}
+.mt4-text div>p:last-of-type{
+    width: 100%;
+    max-width: 640px;
+}
+.mt4-text p:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29px;
+    height: 31px;
+    background: url(images/arrows.png);
+}
+.mt4-text p:first-of-type::before{
+    top: 5px;
+}
+.mt4-text p:last-of-type::before{
+    top: 15px;
+}
+.try-mt4{
+    padding:60px 0;
+}
+.try-mt4 h2{
+    color: #4da928;
+}
+.try-mt4 h3{
+    color: #333;
+    margin-bottom: 55px;
+}
+.try-info{
+    position: relative;
+    margin-bottom: 55px;
+    padding-left: 32px;
+    padding-top: 30px;
+    border: 4px solid #4da928;
+}
+.try-info:after{
+    content: "";
+    position: absolute;
+    top: -32px;
+    right: -100px;
+    width: 883px;
+    height: 468px;
+    background: url(images/win-trade.png);
+}
+.try-info li{
+    width: 100%;
+    max-width: 370px;
+    font-size: 25px;
+    font-family: HelveticaNeueCyrRoman;
+    color: #4da928;
+    margin-bottom: 40px;
+}
+.try-info li span{
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #333;
+}
+.try-info li:first-of-type span{
+    position: relative;
+}
+.try-info li:first-of-type span:after{
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 140px;
+    height: 45px;
+    background: url(images/plat-ic.png) no-repeat;
+}
+footer{
+    padding: 42px 0;
+    position: relative;
+    background: #333;
+}
+footer:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    background: url(images/trade-stipres.png);
+    background-position: 270px 90px;
+}
+footer>div>*{
+    position: relative;
+    z-index:9999;
+}
+.footer-logo{
+    display: inline-block;
+    margin-right: 90px;
+}
+.footer-text{
+    display: inline-block;
+    width: 100%;
+    max-width: 918px;
+}
+.footer-text p{
+    color: #fff;
+    opacity: 0.7;
+    font-size: 16px;
+    font-family: HelveticaNeueCyrRoman;
+}
+.overlay{
+    width:100%;
+    min-height: 100%;
+    overflow:hidden;
+    position:fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.popup-form{
+    width:100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,.8);
+    overflow:hidden;
+    position:fixed;
+    z-index: 99999;
+    top: 0;
+}
+.popup-form a:nth-of-type(2){
+    content: "×";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    font: 20px/30px Arial,Helvetica Neue,Helvetica,sans-serif;
+    color: #888;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 50%;
+    border-width: 0;
+    transition: background .25s;
+    box-sizing: border-box;
+    z-index: 2;
+    cursor: pointer;
+}
+.popup-form a:nth-of-type(2):hover{
+    color:#333;
+    background: #e9e9e9;
+}
+.accopen-form{
+    position: relative;
+    margin: 10% auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 38px 90px 36px 52px;
+    border-radius: 10px;
+    background: url(images/form-stripes.png) no-repeat, url(images/form-bg.png) no-repeat;
+    background-size: cover;
+    background-position: -300px 432px, 0 0;
+}
+.accopen-form h2{
+    color: #4da928;
+    margin-bottom: 55px;
+    font-size: 55px;
+    font-family: HelveticaNeueCyrBold;
+}
+.accopen-form p{
+    display: inline-block;
+    color: #4da928;
+    opacity: 0.7;
+    font-size: 25px;
+    font-family: HelveticaNeueCyrRoman;
+}
+.accopen-form input[type="text"]{
+    width: 100%;
+    max-width: 470px;
+    padding: 18px 6px;
+    border-radius: 10px;
+    float: right;
+    display: inline-block;
+    border: 2px solid #949494;
+    background: none;
+}
+.accopen-form input[type="submit"] {
+    display: block;
+    border: none;
+    margin: 55px 0 0 188px;
+    cursor: pointer;
+}
+.field{
+    margin-bottom: 10px;
+}
+.err-msg {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: #6d6d6d;
+    font-size: 16px;
+    font-family: HelveticaNeueCyrRoman;
+}
+.frm-wrps-ok {
+    display: none;
+}
+
+.cong-text{
+    width: 100%;
+    max-width: 600px;
+}
+
+.frm-wrps-ok h2 {
+    margin-bottom: 0;
+}
+
+.frm-wrps-ok h3 {
+    color: #333;
+    margin-bottom: 50px;
+}
+
+div.frm-wrps-ok p.b-text {
+    display: inline-block;
+    color: #333;
+    opacity: 1;
+    font-size: 30px;
+    font-family: HelveticaNeueCyrBold;
+    margin-bottom: 40px
+}
+
+.frm-wrps-ok p:last-of-type {
+    color: #333;
+    font-size: 16px;
+    font-family: HelveticaNeueCyrRoman;
+}
+
+.frm-wrps-ok .green-btn {
+    display: block;
+    margin: 55px auto 0;
+}
+.accopen-form input[type="submit"],
+.frm-wrps-ok .green-btn{
+    font-size: 27px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 21px 30px;
+}
+@media screen and (max-width: 1400px){
+    .description:after{
+        width: 760px;
+        bottom: -210px;
+        right: -5px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .try-info:after{
+        right: -10px;
+        width: 823px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1235px){
+    .advantages .grid-line{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .container {
+        padding: 0 25px;
+    }
+    .buttons {
+        text-align: center;
+    }
+    .description:after {
+        display: none;
+    }
+    .main-banner {
+        min-height: 915px;
+        background: url(images/platforms-res.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .logo {
+        float: left;
+    }
+    .banner-text {
+        float: right;
+    }
+    .banner:after {
+        background-position: left bottom;
+    }
+    .main-banner .buttons{
+        margin-top: 725px;
+        clear: both;
+    }
+    .main-banner:after {
+        display: none;
+    }
+    .opport-list {
+        max-width: none;
+        margin-bottom: 512px;
+    }
+    .substrate:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: -15px;
+        width: 100%;
+        height: 512px;
+        z-index: 9;
+        /* transform: translate(-50%, 0); */
+        background: url(images/display.png) no-repeat;
+        background-position: center;
+    }
+    .mt4-text div>p:first-of-type {
+        margin: 0 0 20px;
+    }
+    .try-info:after {
+        display: none;
+    }
+    footer:after {
+        background-position: 0 110px;
+    }
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 767px){
+    .container{
+        padding: 0 17px;
+    }
+    h2{
+        font-size: 33px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .green-btn,
+    .red-btn{
+        display: block;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .green-btn{
+        margin-bottom: 10px;
+    }
+    .green-btn span,
+    red-btn span{
+        display: block;
+        font-size: 14px;
+    }
+    .main-banner{
+        min-height: auto;
+        padding-top: 25px;
+        padding-bottom: 42px;
+    }
+    .main-banner .logo{
+        margin-bottom: 15px;
+        max-width: 70px;
+    }
+    .banner-text{
+        float: none;
+        clear: both;
+    }
+    .main-banner .buttons{
+        margin-top: 393px;
+    }
+    .advantages .grid-line{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+    .substrate:after{
+        background-size: contain;
+        max-width: 550px;
+        transform: translate(50%, 0);
+        right: 50%;
+    }
+    .opport-list ul{
+        padding: 0 0 0 25px;
+    }
+    .opport-list{
+        margin-bottom: 500px;
+    }
+    .opport-list ul li:before{
+        width: 20px;
+        background-size: contain;
+    }
+    .mt4-title{
+        padding-top: 35px;
+    }
+    .mt4-text p{
+        font-size: 14px;
+        padding-left: 38px;
+    }
+    .mt4-text p:before{
+        width: 20px;
+        background-size: contain;
+    }
+    .try-info li:first-of-type span{
+        padding-bottom: 10px;
+    }
+    .try-info li:first-of-type span:after{
+        top: 100%;
+        right: auto;
+        left: 0;
+    }
+    .try-info li span{
+        margin-top: 10px;
+    }
+    .try-info{
+        padding-left: 0;
+    }
+    .try-info li{
+        font-size: 18px;
+        margin-bottom: 65px;
+    }
+    .try-info li:nth-of-type(2),
+    .try-info li:nth-of-type(3){
+        margin-bottom: 40px;
+    }
+    .accopen-form p{
+    	margin-bottom: 10px;
+    }
+
+    .accopen-form input[type="text"]{
+    	float: none;
+    	display: block;
+    }
+
+    div.frm-wrps-ok p.b-text{
+    	font-size: 25px;
+    }
+
+    .accopen-form h2{
+    	margin-bottom: 5px;
+    }
+
+    .accopen-form input[type="submit"] {
+	    margin: 55px 0 0 0;
+	}
+}
+@media screen and (max-width: 420px){
+    .opport-list{
+        padding-left: 10px;
+        margin-bottom: 370px;
+    }
+    .substrate::after{
+        top: 90%;
+    }
+    try-mt4 h2{
+        margin-right: 40px;
+    }
+    .opport h3{
+        margin-right: 20px;
+    }
+    .accopen-form{
+        padding: 38px 20px 52px 22px;
+    }
+}
+
